@@ -21,8 +21,9 @@ param(
 $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
-$pkg = "com.dsa.module$Module.lab$Lab"
-$pkgPath = "com/dsa/module$Module/lab$Lab"
+$labStr = $Lab.ToString('00')
+$pkg = "com.dsa.module$Module.lab$labStr"
+$pkgPath = "com/dsa/module$Module/lab$labStr"
 $cls = 'P' + $Id.ToString('0000') + $Name
 
 if ([string]::IsNullOrWhiteSpace($Slug)) {
@@ -61,9 +62,9 @@ package __PKG__;
  *   Hướng tối ưu       :
  *
  * Điền sau khi pass:
- *   Time  : O(?)
- *   Space : O(?)
- *   Vì sao đúng:
+ *   bruteForce Time: O(?)  Space: O(?)
+ *   optimal    Time: O(?)  Space: O(?)
+ *   Vì sao cách tối ưu đúng:
  */
 public class __CLS__ {
 
