@@ -20,11 +20,11 @@ public class P0121BestTimeToBuyAndSellStock {
 
     public int bruteForce(int[] prices) {
         int maxProfit = 0;
-        for (int i = 0; i < prices.length; i++) {
+        for (int i = 0; i < prices.length - 1; i++) {
             for (int j = i + 1; j < prices.length; j++) {
-                int sub = prices[j] - prices[i];
-                if (sub > maxProfit) {
-                    maxProfit = sub;
+                int profit = prices[j] - prices[i];
+                if (profit > maxProfit) {
+                    maxProfit = profit;
                 }
             }
         }
@@ -38,7 +38,7 @@ public class P0121BestTimeToBuyAndSellStock {
         while (right < prices.length) {
             if (prices[right] > prices[left]) {
                 int profit = prices[right] - prices[left];
-                maxProfit = Math.max(maxProfit, profit);
+                maxProfit = Math.max(profit, maxProfit);
             } else {
                 left = right;
             }
