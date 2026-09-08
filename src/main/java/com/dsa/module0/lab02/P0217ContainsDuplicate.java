@@ -22,50 +22,30 @@ import java.util.Set;
  */
 public class P0217ContainsDuplicate {
 
-    /**
-     * Cách 1: Brute force thuần túy — duyệt mọi cặp phần tử không cần sắp xếp.
-     * Time: O(N^2)
-     * Space: O(1)
-     */
     public boolean bruteForce(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length - 1; i++) {
             for (int j = i + 1; j < nums.length; j++) {
-                if (nums[i] == nums[j]) {
-                    return true;
-                }
+                if (nums[i] == nums[j]) return true;
             }
         }
         return false;
     }
 
-    /**
-     * Cách 2: Sắp xếp — gom các phần tử bằng nhau về cạnh nhau.
-     * Time: O(N log N)
-     * Space: O(1) (hoặc O(log N) stack recursion)
-     */
     public boolean bySorting(int[] nums) {
-        int[] copy = nums.clone(); // Tránh thay đổi mảng gốc của caller
-        Arrays.sort(copy);
-        for (int i = 0; i < copy.length - 1; i++) {
-            if (copy[i] == copy[i + 1]) {
-                return true;
-            }
+        int[] numsClone = nums.clone();
+        Arrays.sort(numsClone);
+        for (int i = 0; i < numsClone.length - 1; i++) {
+            if (numsClone[i] == numsClone[i + 1]) return true;
         }
         return false;
     }
 
-    /**
-     * Cách 3: Tối ưu — dùng HashSet kiểm tra trùng lặp một lượt.
-     * Time: O(N)
-     * Space: O(N)
-     */
     public boolean optimal(int[] nums) {
-        Set<Integer> seen = new HashSet<>();
+        Set<Integer> map = new HashSet<>();
         for (int num : nums) {
-            if (!seen.add(num)) {
-                return true;
-            }
+            if (!map.add(num)) return true;
         }
         return false;
     }
 }
+
