@@ -4,7 +4,7 @@
 Đây là nguồn sự thật duy nhất. Không suy đoán vị trí từ lịch sử hội thoại — hội thoại có thể bị cắt, file này thì không.
 **Sau mỗi Lab, cập nhật file này và `REVIEW_QUEUE.md`.**
 
-Cập nhật lần cuối: 2026-09-07
+Cập nhật lần cuối: 2026-09-13
 
 ---
 
@@ -12,20 +12,21 @@ Cập nhật lần cuối: 2026-09-07
 
 - **Module:** 0 — Nền tảng và cỗ máy luyện tập
 - **Lab:** 0.3 — Collection cho DSA và bảng chi phí thao tác
-- **Trạng thái:** 🟡 **ĐÃ XONG BÀI MỒI LC 88 — ĐANG HỌC BẢNG CHI PHÍ & LÀM TIẾP LC 344, LC 66**
+- **Trạng thái:** 🟡 **ĐÃ XONG BÀI MỒI LC 88, LC 344 — ĐANG TRẢ NỢ ÔN & CHUẨN BỊ HỌC BẢNG CHI PHÍ, LC 66**
 
-Lab 0.1 và 0.2 xong trọn vẹn. Ôn vòng 2 ngày 2026-09-07 đã trả xong.
+Lab 0.1 và 0.2 xong trọn vẹn.
 
 **Đang dở dang — dừng ở đây nếu hội thoại bị cắt:**
 
 | Mục | Trạng thái |
 | --- | --- |
-| Bài mồi LC 88 Merge Sorted Array | ✓ Đã hoàn thành (pass 7/7 test: 1 mẫu, 6 biên; tự viết optimal Three Pointers lùi O(m+n), O(1) space) |
-| Dạy bảng chi phí thao tác | 🟡 Đang ở đây |
-| LC 344 Reverse String, LC 66 Plus One | Kế tiếp |
+| Bài mồi LC 88 Merge Sorted Array | ✓ Đã hoàn thành (pass 7/7 test: 1 mẫu, 6 biên; Three Pointers O(m+n), O(1) space) |
+| LC 344 Reverse String | ✓ Đã hoàn thành (pass 6/6 test: Two Pointers O(N) time, O(1) space) |
+| Trả nợ Review Queue (2026-09-13) | ✓ Đã trả sạch 5/5 bài (LC 1 🟢, LC 121 🟢, LC 344 🟢, LC 217 🟢, LC 88 🟢) |
+| Dạy bảng chi phí thao tác & LC 66 Plus One | 🟡 Đang ở đây |
 | `docs/module0/lab03/` (TEMPLATE, ERROR_LOG, SENIOR_ADVICE) | Chưa tạo |
 
-**Việc kế tiếp của agent:** Dạy bảng chi phí thao tác → Giao bài LC 344.
+**Việc kế tiếp của agent:** Dạy bảng chi phí thao tác Collection Java → Sinh khung & Giao bài LC 66 Plus One.
 
 ---
 
@@ -37,6 +38,8 @@ Lab 0.1 và 0.2 xong trọn vẹn. Ôn vòng 2 ngày 2026-09-07 đã trả xong.
 | 0 | 0.2 | 2026-09-04 | 🟢 Pass gọn (LC 121, LC 217: tự viết optimal, đối chiếu 3 mức Big-O, benchmark JVM) |
 | — | Ôn vòng 1 | 2026-09-06 | LC 1 🟢 · LC 121 🟡 · LC 217 🟡 — chi tiết ở `REVIEW_QUEUE.md` |
 | — | Ôn vòng 2 | 2026-09-07 | LC 121 🟢 (lên cấp 1) · LC 217 🟡 (giữ cấp 0) — chi tiết ở `REVIEW_QUEUE.md` |
+| — | Ôn vòng 3 | 2026-09-09 | LC 217 🟢 (lên cấp 1) · LC 88 🟢 (lên cấp 1) — chi tiết ở `REVIEW_QUEUE.md` |
+| — | Ôn vòng 4 | 2026-09-13 | LC 1 🟢 (lên Cấp 2) · LC 121 🟢 (lên Cấp 2) · LC 344 🟢 (lên Cấp 1) · LC 217 🟢 (lên Cấp 2) · LC 88 🟢 (lên Cấp 2) — chi tiết ở `REVIEW_QUEUE.md` |
 
 ---
 
@@ -52,6 +55,14 @@ Ghi ngay sau mỗi buổi, không đợi cuối Lab. Người học không commi
 | 2026-09-06 | LC 88 — người học bí ở khâu đọc đề, chưa gõ code | Mắc L7 (tưởng trả về mảng mới, không thấy ràng buộc ghi tại chỗ) và L3 lần 2 (đếm `m` phần tử đầu thành chỉ số 0..m). Đã giảng: chỉ số 0-based, quy ước `i < k`, và các ràng buộc của đề. **Chưa dạy thuật toán merge.** Đã viết hộ test mẫu theo ví dụ đề, 2 test biên người học tự viết |
 | 2026-09-07 | Ôn vòng 2: LC 121 và LC 217 từ trang trắng | LC 121 🟢 pass 4/4 dưới 3 phút. LC 217 🟡 nộp lần 1 fail 4/4 do j=0 (L3) và kiểm tra nhầm nums thay vì numsClone (L6); tự debug bằng mắt sửa xong 4/4 test xanh |
 | 2026-09-07 | Bài mồi LC 88 Merge Sorted Array | 🟢 Pass gọn 7/7 test. Tự viết optimal duyệt ngược Three Pointers O(m+n) time, O(1) space. Nạp queue cấp 0 |
+| 2026-09-09 | Ôn vòng 3: LC 217 Contains Duplicate từ trang trắng | 🟢 Pass gọn dưới 3 phút (pass 4/4 test cả 3 cách: bruteForce O(N²), bySorting O(N log N), optimal O(N)). Sửa dứt điểm L3/L6. Lên Cấp 1 (hẹn 2026-09-12). Lịch sử: 🟡🟡🟢 |
+| 2026-09-09 | Ôn vòng 3: LC 88 Merge Sorted Array từ trang trắng | 🟢 Pass gọn 7/7 test. Lên Cấp 1 (hẹn 2026-09-12). Lịch sử: 🟢🟢 |
+| 2026-09-09 | Bài mới LC 344 Reverse String (Lab 0.3) | 🟢 Tự viết bruteForce O(N) và optimal Two Pointers O(N) time, O(1) space. Pass trọn vẹn 6/6 test mẫu và biên. Nạp queue Cấp 0 (hẹn 2026-09-10) |
+| 2026-09-13 | Ôn vòng 4: LC 1 Two Sum từ trang trắng | 🟢 Pass gọn 4/4 test cả bruteForce và optimal (< 8 phút). Lên Cấp 2 (hẹn 2026-09-16). Lịch sử: 🟢🟢 |
+| 2026-09-13 | Ôn vòng 4: LC 121 Best Time to Buy and Sell Stock từ trang trắng | 🟢 Pass gọn 4/4 test với Two Pointers / Sliding Window. Lên Cấp 2 (hẹn 2026-09-16). Lịch sử: 🟡🟢🟢 |
+| 2026-09-13 | Ôn vòng 4: LC 344 Reverse String từ trang trắng | 🟢 Pass gọn 6/6 test Two Pointers in-place (< 8 phút). Lên Cấp 1 (hẹn 2026-09-16). Lịch sử: 🟢🟢 |
+| 2026-09-13 | Ôn vòng 4: LC 217 Contains Duplicate từ trang trắng | 🟢 Pass gọn 4/4 test cả 3 cách: bruteForce, bySorting (đúng clone), optimal (HashSet). Lên Cấp 2 (hẹn 2026-09-16). Lịch sử: 🟡🟡🟢🟢 |
+| 2026-09-13 | Ôn vòng 4: LC 88 Merge Sorted Array từ trang trắng | 🟢 Pass gọn 7/7 test Three Pointers ngược (< 8 phút). Lên Cấp 2 (hẹn 2026-09-16). Lịch sử: 🟢🟢🟢 |
 
 
 ## MODULE 0 — Nền tảng và cỗ máy luyện tập (2 tuần, 6 Lab)

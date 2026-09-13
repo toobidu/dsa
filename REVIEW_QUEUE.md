@@ -4,7 +4,7 @@
 
 Bài trong file này là **bài kiểm tra**, không phải bài học. Cấm gợi ý, cấm nhắc pattern, cấm nói bài này thuộc chủ đề gì. Vi phạm là hỏng phép đo, mà phép đo là thứ duy nhất cho biết người học có thật sự nhớ hay chỉ đang thấy quen mắt.
 
-Cập nhật lần cuối: 2026-09-06
+Cập nhật lần cuối: 2026-09-09
 
 ---
 
@@ -52,11 +52,11 @@ Cập nhật lần cuối: 2026-09-06
 
 ---
 
-## TỚI HẠN HÔM NAY
+## TỚI HẠN HÔM NAY (2026-09-13)
 
-| Bài | Chủ đề | Cấp | Giới hạn | Lần cuối |
-| --- | --- | --- | --- | --- |
-| — | — | — | — | Đã trả xong nợ ôn ngày 2026-09-07 (LC 121 🟢, LC 217 🟡) |
+*Không còn bài nào nợ ôn. Toàn bộ 5 bài tới hạn hôm nay đã được trả nợ trọn vẹn!*
+
+*Đã trả nợ hôm nay: LC 1 Two Sum 🟢 (lên Cấp 2) · LC 121 Best Time to Buy and Sell Stock 🟢 (lên Cấp 2) · LC 344 Reverse String 🟢 (lên Cấp 1) · LC 217 Contains Duplicate 🟢 (lên Cấp 2) · LC 88 Merge Sorted Array 🟢 (lên Cấp 2) — tất cả hẹn tiếp 2026-09-16.*
 
 ---
 
@@ -66,10 +66,11 @@ Sắp theo `Hẹn ôn` tăng dần. Cột `Lịch sử` ghi kết quả các l�
 
 | Bài | Chủ đề | Độ khó | Cấp | Giải lần đầu | Ôn gần nhất | Hẹn ôn | Lịch sử |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| LC 88 Merge Sorted Array | Array / Two Pointers | Easy | 0 | 2026-09-07 | — | 2026-09-08 | 🟢 |
-| LC 217 Contains Duplicate | Hashing / Sorting | Easy | 0 | 2026-09-04 | 2026-09-07 | 2026-09-08 | 🟡🟡 |
-| LC 1 Two Sum | Hashing / Array | Easy | 1 | 2026-09-04 | 2026-09-06 | 2026-09-09 | 🟢 |
-| LC 121 Best Time to Buy and Sell Stock | Array / Two Pointers | Easy | 1 | 2026-09-04 | 2026-09-07 | 2026-09-10 | 🟡🟢 |
+| LC 344 Reverse String | Two Pointers | Easy | 1 | 2026-09-09 | 2026-09-13 | 2026-09-16 | 🟢🟢 |
+| LC 88 Merge Sorted Array | Array / Two Pointers | Easy | 2 | 2026-09-07 | 2026-09-13 | 2026-09-16 | 🟢🟢🟢 |
+| LC 1 Two Sum | Hashing / Array | Easy | 2 | 2026-09-04 | 2026-09-13 | 2026-09-16 | 🟢🟢 |
+| LC 121 Best Time to Buy and Sell Stock | Array / Two Pointers | Easy | 2 | 2026-09-04 | 2026-09-13 | 2026-09-16 | 🟡🟢🟢 |
+| LC 217 Contains Duplicate | Hashing / Sorting | Easy | 2 | 2026-09-04 | 2026-09-13 | 2026-09-16 | 🟡🟡🟢🟢 |
 
 ---
 
@@ -85,11 +86,11 @@ Vẫn nên quay lại mỗi 3 tháng một lần. Không xóa khỏi file.
 
 ## BÀI ĐANG CÓ VẤN ĐỀ
 
-Bài fail từ 2 lần trở lên. Đây là danh sách quan trọng nhất file — nó chỉ đúng chỗ đang hổng.
+Bài fail từ 2 lần trở lên hoặc có dấu hiệu kẹt. Đây là danh sách quan trọng nhất file — nó chỉ đúng chỗ đang hổng.
 
 | Bài | Số lần fail | Loại lỗi lặp lại | Đã chữa thế nào |
 | --- | --- | --- | --- |
-| LC 217 Contains Duplicate | 0 fail (2 lần 🟡) | L3 (chỉ số vòng lặp) + L6 (dùng nhầm mảng gốc thay vì clone) | Tự debug bằng mắt tìm ra bug |
+| LC 217 Contains Duplicate | 0 fail (2 lần 🟡, 1 lần 🟢) | L3 (chỉ số vòng lặp) + L6 (dùng nhầm mảng gốc thay vì clone) | Đã giải quyết ở vòng 3 (2026-09-09, pass < 3 phút, lên Cấp 1) |
 
 **Quy tắc:** một bài fail 3 lần thì dừng ôn nó, quay lại học lại **pattern** của nó từ Lab gốc. Ôn lần thứ tư một bài chưa hiểu chỉ là học thuộc lời giải, và học thuộc lời giải thì gặp bài lạ vẫn tắc.
 
