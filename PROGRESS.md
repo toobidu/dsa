@@ -4,29 +4,19 @@
 Đây là nguồn sự thật duy nhất. Không suy đoán vị trí từ lịch sử hội thoại — hội thoại có thể bị cắt, file này thì không.
 **Sau mỗi Lab, cập nhật file này và `REVIEW_QUEUE.md`.**
 
-Cập nhật lần cuối: 2026-09-13
+Cập nhật lần cuối: 2026-09-14
 
 ---
 
 ## VỊ TRÍ HIỆN TẠI
 
 - **Module:** 0 — Nền tảng và cỗ máy luyện tập
-- **Lab:** 0.3 — Collection cho DSA và bảng chi phí thao tác
-- **Trạng thái:** 🟡 **ĐÃ XONG BÀI MỒI LC 88, LC 344 — ĐANG TRẢ NỢ ÔN & CHUẨN BỊ HỌC BẢNG CHI PHÍ, LC 66**
+- **Lab:** 0.4 — 14 cái bẫy Java trên LeetCode
+- **Trạng thái:** 🟢 **ĐÃ HOÀN THÀNH LAB 0.3 TRỌN VẸN — CHUẨN BỊ MỞ LAB 0.4**
 
-Lab 0.1 và 0.2 xong trọn vẹn.
+Lab 0.1, 0.2 và 0.3 đã xong trọn vẹn.
 
-**Đang dở dang — dừng ở đây nếu hội thoại bị cắt:**
-
-| Mục | Trạng thái |
-| --- | --- |
-| Bài mồi LC 88 Merge Sorted Array | ✓ Đã hoàn thành (pass 7/7 test: 1 mẫu, 6 biên; Three Pointers O(m+n), O(1) space) |
-| LC 344 Reverse String | ✓ Đã hoàn thành (pass 6/6 test: Two Pointers O(N) time, O(1) space) |
-| Trả nợ Review Queue (2026-09-13) | ✓ Đã trả sạch 5/5 bài (LC 1 🟢, LC 121 🟢, LC 344 🟢, LC 217 🟢, LC 88 🟢) |
-| Dạy bảng chi phí thao tác & LC 66 Plus One | 🟡 Đang ở đây |
-| `docs/module0/lab03/` (TEMPLATE, ERROR_LOG, SENIOR_ADVICE) | Chưa tạo |
-
-**Việc kế tiếp của agent:** Dạy bảng chi phí thao tác Collection Java → Sinh khung & Giao bài LC 66 Plus One.
+**Việc kế tiếp của agent:** Mở Lab 0.4 (14 cái bẫy Java trên LeetCode theo mục 7.2 `GUIDE.md`) → Sinh khung bài LC 7 Reverse Integer.
 
 ---
 
@@ -36,6 +26,7 @@ Lab 0.1 và 0.2 xong trọn vẹn.
 | --- | --- | --- | --- |
 | 0 | 0.1 | 2026-09-04 | 🟢 Pass gọn (LC 1 Two Sum: tự viết bruteForce O(N²) và optimal O(N), pass 4/4 test) |
 | 0 | 0.2 | 2026-09-04 | 🟢 Pass gọn (LC 121, LC 217: tự viết optimal, đối chiếu 3 mức Big-O, benchmark JVM) |
+| 0 | 0.3 | 2026-09-14 | 🟢 Pass gọn (LC 88, LC 344, LC 66 Plus One pass 5/5 test, bảng chi phí Collection, tạo đủ docs) |
 | — | Ôn vòng 1 | 2026-09-06 | LC 1 🟢 · LC 121 🟡 · LC 217 🟡 — chi tiết ở `REVIEW_QUEUE.md` |
 | — | Ôn vòng 2 | 2026-09-07 | LC 121 🟢 (lên cấp 1) · LC 217 🟡 (giữ cấp 0) — chi tiết ở `REVIEW_QUEUE.md` |
 | — | Ôn vòng 3 | 2026-09-09 | LC 217 🟢 (lên cấp 1) · LC 88 🟢 (lên cấp 1) — chi tiết ở `REVIEW_QUEUE.md` |
@@ -63,6 +54,7 @@ Ghi ngay sau mỗi buổi, không đợi cuối Lab. Người học không commi
 | 2026-09-13 | Ôn vòng 4: LC 344 Reverse String từ trang trắng | 🟢 Pass gọn 6/6 test Two Pointers in-place (< 8 phút). Lên Cấp 1 (hẹn 2026-09-16). Lịch sử: 🟢🟢 |
 | 2026-09-13 | Ôn vòng 4: LC 217 Contains Duplicate từ trang trắng | 🟢 Pass gọn 4/4 test cả 3 cách: bruteForce, bySorting (đúng clone), optimal (HashSet). Lên Cấp 2 (hẹn 2026-09-16). Lịch sử: 🟡🟡🟢🟢 |
 | 2026-09-13 | Ôn vòng 4: LC 88 Merge Sorted Array từ trang trắng | 🟢 Pass gọn 7/7 test Three Pointers ngược (< 8 phút). Lên Cấp 2 (hẹn 2026-09-16). Lịch sử: 🟢🟢🟢 |
+| 2026-09-14 | Học bảng chi phí Java Collection, giải LC 66 Plus One, hoàn tất Lab 0.3 | 🟢 Pass 5/5 test. Rút ra bài học: duyệt từ phải qua trái thì viết lặp lùi `for (int i = n - 1; i >= 0; i--)` tránh lỗi L3; nhớ quy tắc khởi tạo mảng `int[]` mặc định 0 tránh lỗi L6. Nạp LC 66 Cấp 0 (hẹn 2026-09-15). Tạo đủ 3 docs Lab 0.3. Xong Lab 0.3 trọn vẹn |
 
 
 ## MODULE 0 — Nền tảng và cỗ máy luyện tập (2 tuần, 6 Lab)
@@ -71,8 +63,8 @@ Ghi ngay sau mỗi buổi, không đợi cuối Lab. Người học không commi
 | --- | --- | --- |
 | 0.1 | Dựng project, JUnit, một vòng "luật một bài" đầy đủ | ✓ Hoàn thành |
 | 0.2 | Big-O thực chiến — đo thật, dự đoán trước khi chạy | ✓ Hoàn thành |
-| 0.3 | Collection cho DSA và bảng chi phí thao tác | ⛔ Đang ở đây |
-| 0.4 | 14 cái bẫy Java trên LeetCode | — |
+| 0.3 | Collection cho DSA và bảng chi phí thao tác | ✓ Hoàn thành |
+| 0.4 | 14 cái bẫy Java trên LeetCode | ⛔ Đang ở đây |
 | 0.5 | Đệ quy: đọc call stack, đệ quy và lặp | — |
 | 0.6 | Khuôn phỏng vấn 45 phút, nạp 10 bài đầu vào queue | — |
 
@@ -125,7 +117,7 @@ Mục tiêu tỷ lệ giữ lại: **trên 80%**.
 - [x] Đã khởi tạo Git repository (branch `main`)
 - [ ] Chưa có tài khoản LeetCode gắn với lộ trình này (cần từ M10 để dự contest)
 - [ ] Chưa chốt quy ước biên cho binary search (bắt buộc chốt ở Lab 2.5, dùng mãi về sau)
-- [ ] **`.gitignore` dòng 6 có `**.md` → toàn bộ tài liệu không được git theo dõi.** `PROGRESS.md`, `REVIEW_QUEUE.md`, `ERROR_LOG.md`, `TEMPLATE.md` đều nằm ngoài repo. Mất máy là mất sạch lịch ôn và nhật ký lỗi. Đang chờ người học quyết có bỏ dòng đó không
+- [x] Đã bỏ `**.md` khỏi `.gitignore` — toàn bộ tài liệu Markdown (`PROGRESS.md`, `REVIEW_QUEUE.md`, `ERROR_LOG.md`, `TEMPLATE.md`) đã được git theo dõi (commit 4bd23de)
 
 ---
 

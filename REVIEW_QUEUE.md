@@ -4,7 +4,7 @@
 
 Bài trong file này là **bài kiểm tra**, không phải bài học. Cấm gợi ý, cấm nhắc pattern, cấm nói bài này thuộc chủ đề gì. Vi phạm là hỏng phép đo, mà phép đo là thứ duy nhất cho biết người học có thật sự nhớ hay chỉ đang thấy quen mắt.
 
-Cập nhật lần cuối: 2026-09-09
+Cập nhật lần cuối: 2026-09-14
 
 ---
 
@@ -52,11 +52,9 @@ Cập nhật lần cuối: 2026-09-09
 
 ---
 
-## TỚI HẠN HÔM NAY (2026-09-13)
+## TỚI HẠN HÔM NAY (2026-09-14)
 
-*Không còn bài nào nợ ôn. Toàn bộ 5 bài tới hạn hôm nay đã được trả nợ trọn vẹn!*
-
-*Đã trả nợ hôm nay: LC 1 Two Sum 🟢 (lên Cấp 2) · LC 121 Best Time to Buy and Sell Stock 🟢 (lên Cấp 2) · LC 344 Reverse String 🟢 (lên Cấp 1) · LC 217 Contains Duplicate 🟢 (lên Cấp 2) · LC 88 Merge Sorted Array 🟢 (lên Cấp 2) — tất cả hẹn tiếp 2026-09-16.*
+*Không còn bài nào nợ ôn. Bài mới giải hôm nay: LC 66 Plus One 🟢 (nạp vào Cấp 0, hẹn ôn 2026-09-15).*
 
 ---
 
@@ -66,6 +64,7 @@ Sắp theo `Hẹn ôn` tăng dần. Cột `Lịch sử` ghi kết quả các l�
 
 | Bài | Chủ đề | Độ khó | Cấp | Giải lần đầu | Ôn gần nhất | Hẹn ôn | Lịch sử |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| LC 66 Plus One | Array / Simulation | Easy | 0 | 2026-09-14 | — | 2026-09-15 | 🟢 |
 | LC 344 Reverse String | Two Pointers | Easy | 1 | 2026-09-09 | 2026-09-13 | 2026-09-16 | 🟢🟢 |
 | LC 88 Merge Sorted Array | Array / Two Pointers | Easy | 2 | 2026-09-07 | 2026-09-13 | 2026-09-16 | 🟢🟢🟢 |
 | LC 1 Two Sum | Hashing / Array | Easy | 2 | 2026-09-04 | 2026-09-13 | 2026-09-16 | 🟢🟢 |
@@ -104,3 +103,4 @@ Nguồn: các `ERROR_LOG.md` trong `docs/`. Cột nào cao nhất thì tuần sa
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2026-08-31 → 09-06 | 0 | 1 | 1 | 0 | 0 | 1 | 0 |
 | 2026-09-07 → 09-13 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 2026-09-14 → 09-20 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
